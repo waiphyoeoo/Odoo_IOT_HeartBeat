@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <!-- List View -->
+    <record id="view_esp32_device_list" model="ir.ui.view">
+        <field name="name">esp32.device.list</field>
+        <field name="model">esp32.device</field>
+
+        <field name="arch" type="xml">
+
+            <list>
+                <field name="name"/>
+                <field name="ip_address"/>
+                <field name="status"/>
+                <field name="online"/>
+                <field name="last_seen"/>
+                <field name="uptime"/>
+                <field name="api_token" password="True"/>
+            </list>
+
+        </field>
+    </record>
+
+
+    <!-- Form View -->
+    <record id="view_esp32_device_form" model="ir.ui.view">
+        <field name="name">esp32.device.form</field>
+        <field name="model">esp32.device</field>
+
+        <field name="arch" type="xml">
+
+            <form>
+
+<!--                <header>-->
+
+<!--                    <button-->
+<!--                            name="action_turn_on"-->
+<!--                            type="object"-->
+<!--                            string="Turn ON"-->
+<!--                            class="btn-primary"-->
+<!--                    />-->
+
+<!--                    <button-->
+<!--                            name="action_turn_off"-->
+<!--                            type="object"-->
+<!--                            string="Turn OFF"-->
+<!--                    />-->
+
+<!--                    <button-->
+<!--                            name="action_refresh_status"-->
+<!--                            type="object"-->
+<!--                            string="Refresh Status"-->
+<!--                    />-->
+
+<!--                </header>-->
+
+
+                <sheet>
+
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="ip_address"/>
+                            <field name="api_token" password="True"/>
+                        </group>
+
+                        <group>
+                            <field name="status"/>
+                            <field name="online"/>
+                            <field name="last_seen"/>
+                            <field name="uptime"/>
+                        </group>
+                    </group>
+
+
+                </sheet>
+
+            </form>
+
+        </field>
+    </record>
+
+
+    <!-- Action -->
+    <record id="action_esp32_device" model="ir.actions.act_window">
+
+        <field name="name">ESP32 Devices</field>
+
+        <field name="res_model">esp32.device</field>
+
+        <field name="view_mode">list,form</field>
+
+    </record>
+
+
+    <!-- Menu -->
+    <menuitem
+            id="menu_esp32_iot_root"
+            name="ESP32 IoT"
+            sequence="10"
+    />
+
+    <menuitem
+            id="menu_esp32_device"
+            name="Devices"
+            parent="menu_esp32_iot_root"
+            action="action_esp32_device"
+            sequence="10"
+    />
+
+</odoo>
