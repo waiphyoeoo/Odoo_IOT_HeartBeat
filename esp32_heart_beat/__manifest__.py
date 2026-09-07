@@ -5,8 +5,11 @@
     'summary': 'Control ESP32 devices from Odoo',
 
     'author': 'BlackJack',
-    'website': 'https://yourwebsite.com',
     'license': 'LGPL-3',
+
+    'images': [
+        'static/description/banner.png',
+    ],
 
     'depends': [
         'base',

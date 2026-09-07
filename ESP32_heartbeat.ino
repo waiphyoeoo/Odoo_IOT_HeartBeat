@@ -5,8 +5,8 @@
 // =========================
 // WiFi Settings
 // =========================
-const char* ssid = "GreenIT";
-const char* password = "PW@86709657";
+const char* ssid = "your_wifi_name";
+const char* password = "your_wifi_pass";
 
 // =========================
 // Odoo Settings
