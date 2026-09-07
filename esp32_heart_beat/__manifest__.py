@@ -1,5 +1,5 @@
 {
-    'name': 'ESP32 IoT',
+    'name': 'ESP32 IoT HeartBeat',
     'version': '18.0.1.0.0',
     'category': 'IoT',
     'summary': 'Control ESP32 devices from Odoo',
