@@ -4,7 +4,7 @@
     'category': 'IoT',
     'summary': 'Control ESP32 devices from Odoo',
 
-    'author': 'BlackJack',
+    'author': 'Wai Phyo Oo',
     'license': 'LGPL-3',
 
     'images': [
