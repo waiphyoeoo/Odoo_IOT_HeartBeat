@@ -3,6 +3,7 @@
     'version': '18.0.1.0.0',
     'category': 'IoT',
     'summary': 'Control ESP32 devices from Odoo',
+    'website': 'https://www.smartravens.com/',
 
     'author': 'Wai Phyo Oo',
     'license': 'LGPL-3',
